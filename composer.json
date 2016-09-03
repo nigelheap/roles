@@ -1,0 +1,21 @@
+{
+    "name": "nigelheap/roles",
+    "description": "Powerful package for handling roles and permissions in Laravel 5.3",
+    "keywords": ["roles", "permissions", "acl", "auth", "laravel", "illuminate"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nigel Heap",
+            "email": "nigel@nigelheap.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "~5.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "NigelHeap\\Roles": "src/"
+        }
+    }
+}
