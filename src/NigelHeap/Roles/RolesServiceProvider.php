@@ -3,6 +3,7 @@
 namespace NigelHeap\Roles;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Blade;
 
 class RolesServiceProvider extends ServiceProvider
 {
@@ -41,39 +42,38 @@ class RolesServiceProvider extends ServiceProvider
      */
     protected function registerBladeExtensions()
     {
-        $blade = $this->app['view']->getEngineResolver()->resolve('blade')->getCompiler();
 
-        $blade->directive('role', function ($expression) {
+        Blade::directive('role', function ($expression) {
             return "<?php if (Auth::check() && Auth::user()->isRole{$expression}): ?>";
         });
 
-        $blade->directive('endrole', function () {
+        Blade::directive('endrole', function () {
             return "<?php endif; ?>";
         });
 
-        $blade->directive('permission', function ($expression) {
+        Blade::directive('permission', function ($expression) {
             return "<?php if (Auth::check() && Auth::user()->can{$expression}): ?>";
         });
 
-        $blade->directive('endpermission', function () {
+        Blade::directive('endpermission', function () {
             return "<?php endif; ?>";
         });
 
-        $blade->directive('level', function ($expression) {
+        Blade::directive('level', function ($expression) {
             $level = trim($expression, '()');
 
             return "<?php if (Auth::check() && Auth::user()->level() >= {$level}): ?>";
         });
 
-        $blade->directive('endlevel', function () {
+        Blade::directive('endlevel', function () {
             return "<?php endif; ?>";
         });
 
-        $blade->directive('allowed', function ($expression) {
+        Blade::directive('allowed', function ($expression) {
             return "<?php if (Auth::check() && Auth::user()->allowed{$expression}): ?>";
         });
 
-        $blade->directive('endallowed', function () {
+        Blade::directive('endallowed', function () {
             return "<?php endif; ?>";
         });
     }
