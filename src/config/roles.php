@@ -41,7 +41,7 @@ return [
     */
 
     'models' => [
-        'permission' => Bican\Roles\Models\Permission::class,
+        'permission' => NigelHeap\Roles\Models\Permission::class,
         'role' => NigelHeap\Roles\Models\Role::class
     ],
 
