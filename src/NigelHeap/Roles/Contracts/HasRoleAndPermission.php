@@ -1,6 +1,6 @@
 <?php
 
-namespace Bican\Roles\Contracts;
+namespace NigelHeap\Roles\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
 
