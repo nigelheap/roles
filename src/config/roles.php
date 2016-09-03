@@ -27,6 +27,7 @@ return [
     */
 
     'separator' => '.',
+    //'separator' => '_',
 
     /*
     |--------------------------------------------------------------------------
@@ -40,8 +41,8 @@ return [
     */
 
     'models' => [
-        'role' => Bican\Roles\Models\Role::class,
         'permission' => Bican\Roles\Models\Permission::class,
+        'role' => NigelHeap\Roles\Models\Role::class
     ],
 
     /*
@@ -56,15 +57,13 @@ return [
     */
 
     'pretend' => [
-
         'enabled' => false,
-
         'options' => [
-            'is' => true,
+            'isRole' => true,
             'can' => true,
             'allowed' => true,
         ],
-
     ],
 
 ];
+
