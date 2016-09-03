@@ -36,7 +36,7 @@ Pull this package in through Composer (file `composer.json`).
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.3.*",
-        "nigelheap/roles": "3.0.*"
+        "nigelheap/roles": "5.3.*"
     }
 }
 ```
