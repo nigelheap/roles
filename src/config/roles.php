@@ -34,8 +34,8 @@ return [
     |--------------------------------------------------------------------------
     |
     | If you want, you can replace default models from this package by models
-    | you created. Have a look at `Bican\Roles\Models\Role` model and
-    | `Bican\Roles\Models\Permission` model.
+    | you created. Have a look at `NigelHeap\Roles\Models\Role` model and
+    | `NigelHeap\Roles\Models\Permission` model.
     |
     */
 
@@ -51,7 +51,7 @@ return [
     |
     | You can pretend or simulate package behavior no matter what is in your
     | database. It is really useful when you are testing you application.
-    | Set up what will methods is(), can() and allowed() return.
+    | Set up what will methods isRole(), can() and allowed() return.
     |
     */
 

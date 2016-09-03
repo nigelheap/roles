@@ -1,10 +1,10 @@
 <?php
 
-namespace Bican\Roles\Middleware;
+namespace NigelHeap\Roles\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
-use Bican\Roles\Exceptions\PermissionDeniedException;
+use NigelHeap\Roles\Exceptions\PermissionDeniedException;
 
 class VerifyPermission
 {
@@ -31,7 +31,7 @@ class VerifyPermission
      * @param \Closure $next
      * @param int|string $permission
      * @return mixed
-     * @throws \Bican\Roles\Exceptions\PermissionDeniedException
+     * @throws \NigelHeap\Roles\Exceptions\PermissionDeniedException
      */
     public function handle($request, Closure $next, $permission)
     {

@@ -151,7 +151,7 @@ interface HasRoleAndPermission
     /**
      * Attach permission to a user.
      *
-     * @param int|\Bican\Roles\Models\Permission $permission
+     * @param int|\NigelHeap\Roles\Models\Permission $permission
      * @return null|bool
      */
     public function attachPermission($permission);
@@ -159,7 +159,7 @@ interface HasRoleAndPermission
     /**
      * Detach permission from a user.
      *
-     * @param int|\Bican\Roles\Models\Permission $permission
+     * @param int|\NigelHeap\Roles\Models\Permission $permission
      * @return int
      */
     public function detachPermission($permission);
