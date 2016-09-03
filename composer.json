@@ -15,8 +15,8 @@
     "illuminate/support": "5.3.*"
   },
   "autoload": {
-    "psr-4": {
-      "NigelHeap\\Roles\\": "src/"
+    "psr-0": {
+      "NigelHeap\\Roles": "src"
     }
   }
 }
