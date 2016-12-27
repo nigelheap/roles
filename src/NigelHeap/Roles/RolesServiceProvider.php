@@ -44,7 +44,7 @@ class RolesServiceProvider extends ServiceProvider
     {
 
         Blade::directive('role', function ($expression) {
-            return "<?php if (Auth::check() && Auth::user()->isRole{$expression}): ?>";
+            return "<?php if (Auth::check() && Auth::user()->isRole({$expression})): ?>";
         });
 
         Blade::directive('endrole', function () {
@@ -52,7 +52,7 @@ class RolesServiceProvider extends ServiceProvider
         });
 
         Blade::directive('permission', function ($expression) {
-            return "<?php if (Auth::check() && Auth::user()->can{$expression}): ?>";
+            return "<?php if (Auth::check() && Auth::user()->can({$expression})): ?>";
         });
 
         Blade::directive('endpermission', function () {
@@ -70,7 +70,7 @@ class RolesServiceProvider extends ServiceProvider
         });
 
         Blade::directive('allowed', function ($expression) {
-            return "<?php if (Auth::check() && Auth::user()->allowed{$expression}): ?>";
+            return "<?php if (Auth::check() && Auth::user()->allowed({$expression})): ?>";
         });
 
         Blade::directive('endallowed', function () {
