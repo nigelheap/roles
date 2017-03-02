@@ -143,7 +143,7 @@ $user->detachAllRoles(); // in case you want to detach all roles
 You can now check if the user has required role.
 
 ```php
-if ($user->is('admin')) { // you can pass an id or slug
+if ($user->isRole('admin')) { // you can pass an id or slug
     // or alternatively $user->hasRole('admin')
 }
 ```
@@ -159,20 +159,20 @@ if ($user->isAdmin()) {
 And of course, there is a way to check for multiple roles:
 
 ```php
-if ($user->is('admin|moderator')) { 
+if ($user->isRole('admin|moderator')) { 
     /*
     | Or alternatively:
-    | $user->is('admin, moderator'), $user->is(['admin', 'moderator']),
+    | $user->isRole('admin, moderator'), $user->isRole(['admin', 'moderator']),
     | $user->isOne('admin|moderator'), $user->isOne('admin, moderator'), $user->isOne(['admin', 'moderator'])
     */
 
     // if user has at least one role
 }
 
-if ($user->is('admin|moderator', true)) {
+if ($user->isRole('admin|moderator', true)) {
     /*
     | Or alternatively:
-    | $user->is('admin, moderator', true), $user->is(['admin', 'moderator'], true),
+    | $user->isRole('admin, moderator', true), $user->isRole(['admin', 'moderator'], true),
     | $user->isAll('admin|moderator'), $user->isAll('admin, moderator'), $user->isAll(['admin', 'moderator'])
     */
 
