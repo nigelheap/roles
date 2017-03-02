@@ -1,8 +1,8 @@
-# Roles And Permissions For Laravel 5.3
+# Roles And Permissions For Laravel 5.3 and 5.4
 
-### This is a direct clone of https://github.com/romanbican/roles with the 5.3 fixes added
+### This is a direct clone of https://github.com/romanbican/roles with the 5.3 and 5.4 fixes added
 
-Powerful package for handling roles and permissions in Laravel 5.3.
+Powerful package for handling roles and permissions in Laravel 5.3 and 5.4.
 
 - [Installation](#installation)
     - [Composer](#composer)
@@ -37,8 +37,8 @@ Pull this package in through Composer (file `composer.json`).
 {
     "require": {
         "php": ">=5.6.4",
-        "laravel/framework": "5.3.*",
-        "nigelheap/roles": "5.3.*"
+        "laravel/framework": "5.4.*",
+        "nigelheap/roles": "5.4.*"
     }
 }
 ```
