@@ -1,6 +1,6 @@
-# Roles And Permissions For Laravel 5.3 through 5.5
+# Roles And Permissions For Laravel 5.3 through 5.6
 
-### This is a direct clone of https://github.com/romanbican/roles with the 5.3, 5.4 and 5.5 fixes added
+### This is a direct clone of https://github.com/romanbican/roles with the 5.3, 5.4, 5.5 and 5.6 fixes added
 
 Powerful package for handling roles and permissions in Laravel 5.3 and 5.4.
 
